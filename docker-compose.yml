@@ -31,6 +31,7 @@ services:
     working_dir: /var/www/html
     volumes:
       - cicddockerhubwordpress_wordpress:/var/www/html/wp-content:rw
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     environment:
       WORDPRESS_DB_HOST: database:3306
       WORDPRESS_DB_PASSWORD: ${MYSQL_ROOT_PASSWORD}
