@@ -6,7 +6,20 @@ services:
         - database:/var/lib/mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    networks:
+      - back
+
+  phpmyadmin:
+    depends_on:
+      - database
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: database
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     networks:
       - back
 
@@ -20,7 +33,7 @@ services:
       - wordpress:/var/www/html/wp-content:rw
     environment:
       WORDPRESS_DB_HOST: database:3306
-      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     ports:
       - 80:80
       - 443:443

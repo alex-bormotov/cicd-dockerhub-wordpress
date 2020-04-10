@@ -11,6 +11,10 @@ cd cicd-dockerhub-wordpress
 ```
 
 ```bash
+echo 'MYSQL_ROOT_PASSWORD=YOUR_MYSQL_ROOT_PASSWORD' > .env
+```
+
+```bash
 sudo docker-compose up -d
 ```
 
