@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 services:
   database:
     image: mysql:5.7
@@ -42,7 +42,9 @@ services:
 
 volumes:
   database:
+    external: true
   wordpress:
+    external: true
 
 networks:
   back:
