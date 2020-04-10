@@ -29,5 +29,5 @@ sudo docker exec -it wordpress_container_name /bin/bash
 ```
 
 ```bash
-chown www-data:www-data wp-content
+chown -R www-data:www-data wp-content
 ```
