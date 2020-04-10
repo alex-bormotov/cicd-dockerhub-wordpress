@@ -13,3 +13,5 @@ COPY plugins/mailchimp-for-wp /var/www/html/wp-content/plugins/mailchimp-for-wp/
 COPY plugins/one-click-demo-import /var/www/html/wp-content/plugins/one-click-demo-import/
 COPY plugins/updraftplus /var/www/html/wp-content/plugins/updraftplus/
 COPY plugins/woocommerce /var/www/html/wp-content/plugins/woocommerce/
+COPY plugins/pro-mime-types /var/www/html/wp-content/plugins/pro-mime-types/
+COPY plugins/amazon-s3-and-cloudfront /var/www/html/wp-content/plugins/amazon-s3-and-cloudfront/
