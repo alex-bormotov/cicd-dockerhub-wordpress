@@ -11,3 +11,5 @@ COPY plugins/elementor /var/www/html/wp-content/plugins/elementor/
 COPY plugins/kirki /var/www/html/wp-content/plugins/kirki/
 COPY plugins/mailchimp-for-wp /var/www/html/wp-content/plugins/mailchimp-for-wp/
 COPY plugins/one-click-demo-import /var/www/html/wp-content/plugins/one-click-demo-import/
+COPY plugins/updraftplus /var/www/html/wp-content/plugins/updraftplus/
+COPY plugins/woocommerce /var/www/html/wp-content/plugins/woocommerce/

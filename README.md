@@ -1,6 +1,6 @@
 # DockerHub CI-CD
 
-## Wordpress, custom theme, plugins
+## Pipeline Wordpress(custom theme, plugins) -> DockerImage -> DockerHub and then run it on Docker Compose
 
 ```bash
 git clone https://github.com/alex-bormotov/cicd-dockerhub-wordpress
