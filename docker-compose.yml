@@ -3,7 +3,7 @@ services:
   database:
     image: mysql:5.7
     volumes:
-        - database:/var/lib/mysql
+        - cicddockerhubwordpress_database:/var/lib/mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -30,7 +30,7 @@ services:
     restart: always
     working_dir: /var/www/html
     volumes:
-      - wordpress:/var/www/html/wp-content:rw
+      - cicddockerhubwordpress_wordpress:/var/www/html/wp-content:rw
     environment:
       WORDPRESS_DB_HOST: database:3306
       WORDPRESS_DB_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -41,6 +41,8 @@ services:
       - back
 
 volumes:
+#   database:
+#   wordpress:
   cicddockerhubwordpress_database:
     external: true
   cicddockerhubwordpress_wordpress:
