@@ -41,9 +41,9 @@ services:
       - back
 
 volumes:
-  database:
+  cicddockerhubwordpress_database:
     external: true
-  wordpress:
+  cicddockerhubwordpress_wordpress:
     external: true
 
 networks:
