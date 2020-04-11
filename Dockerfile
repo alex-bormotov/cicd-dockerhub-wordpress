@@ -18,3 +18,4 @@ COPY plugins/amazon-s3-and-cloudfront /var/www/html/wp-content/plugins/amazon-s3
 COPY plugins/wpfront-scroll-top /var/www/html/wp-content/plugins/wpfront-scroll-top/
 COPY plugins/yandex-metrica /var/www/html/wp-content/plugins/yandex-metrica/
 COPY plugins/google-analytics-for-wordpress /var/www/html/wp-content/plugins/google-analytics-for-wordpress/
+COPY plugins/easy-google-fonts /var/www/html/wp-content/plugins/easy-google-fonts/
