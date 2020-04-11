@@ -1,7 +1,6 @@
 FROM wordpress:5.4.0-php7.2-apache
 
 COPY themes/airi /var/www/html/wp-content/themes/mytheme/
-COPY plugins/chaty /var/www/html/wp-content/plugins/chaty/
 COPY plugins/fast-live-chat /var/www/html/wp-content/plugins/fast-live-chat/
 COPY plugins/official-facebook-pixel /var/www/html/wp-content/plugins/official-facebook-pixel/
 COPY plugins/telegram-bot /var/www/html/wp-content/plugins/telegram-bot/
