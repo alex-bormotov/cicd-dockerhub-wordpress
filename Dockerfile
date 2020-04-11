@@ -15,3 +15,6 @@ COPY plugins/updraftplus /var/www/html/wp-content/plugins/updraftplus/
 COPY plugins/woocommerce /var/www/html/wp-content/plugins/woocommerce/
 COPY plugins/pro-mime-types /var/www/html/wp-content/plugins/pro-mime-types/
 COPY plugins/amazon-s3-and-cloudfront /var/www/html/wp-content/plugins/amazon-s3-and-cloudfront/
+COPY plugins/wpfront-scroll-top /var/www/html/wp-content/plugins/wpfront-scroll-top/
+COPY plugins/yandex-metrica /var/www/html/wp-content/plugins/yandex-metrica/
+COPY plugins/google-analytics-for-wordpress /var/www/html/wp-content/plugins/google-analytics-for-wordpress/
