@@ -1,7 +1,6 @@
 FROM wordpress:5.4.0-php7.2-apache
 
 COPY themes/airi /var/www/html/wp-content/themes/mytheme/
-COPY plugins/fast-live-chat /var/www/html/wp-content/plugins/fast-live-chat/
 COPY plugins/official-facebook-pixel /var/www/html/wp-content/plugins/official-facebook-pixel/
 COPY plugins/telegram-bot /var/www/html/wp-content/plugins/telegram-bot/
 COPY plugins/contact-form-7 /var/www/html/wp-content/plugins/contact-form-7/
@@ -18,3 +17,4 @@ COPY plugins/easy-google-fonts /var/www/html/wp-content/plugins/easy-google-font
 COPY plugins/essential-addons-for-elementor-lite /var/www/html/wp-content/plugins/essential-addons-for-elementor-lite/
 COPY plugins/cloudflare-flexible-ssl /var/www/html/wp-content/plugins/cloudflare-flexible-ssl/
 COPY plugins/really-simple-ssl /var/www/html/wp-content/plugins/really-simple-ssl/
+COPY plugins/wp-chatbot /var/www/html/wp-content/plugins/wp-chatbot/
