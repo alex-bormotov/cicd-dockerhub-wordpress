@@ -16,3 +16,5 @@ COPY plugins/yandex-metrica /var/www/html/wp-content/plugins/yandex-metrica/
 COPY plugins/google-analytics-for-wordpress /var/www/html/wp-content/plugins/google-analytics-for-wordpress/
 COPY plugins/easy-google-fonts /var/www/html/wp-content/plugins/easy-google-fonts/
 COPY plugins/essential-addons-for-elementor-lite /var/www/html/wp-content/plugins/essential-addons-for-elementor-lite/
+COPY plugins/cloudflare-flexible-ssl /var/www/html/wp-content/plugins/cloudflare-flexible-ssl/
+COPY plugins/really-simple-ssl /var/www/html/wp-content/plugins/really-simple-ssl/
