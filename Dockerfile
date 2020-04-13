@@ -18,3 +18,5 @@ COPY plugins/essential-addons-for-elementor-lite /var/www/html/wp-content/plugin
 COPY plugins/cloudflare-flexible-ssl /var/www/html/wp-content/plugins/cloudflare-flexible-ssl/
 COPY plugins/really-simple-ssl /var/www/html/wp-content/plugins/really-simple-ssl/
 COPY plugins/wp-chatbot /var/www/html/wp-content/plugins/wp-chatbot/
+COPY plugins/wp-mail-smtp /var/www/html/wp-content/plugins/wp-mail-smtp/
+COPY plugins/wpcf7-redirect /var/www/html/wp-content/plugins/wpcf7-redirect/
