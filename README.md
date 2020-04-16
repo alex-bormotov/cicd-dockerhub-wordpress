@@ -31,3 +31,13 @@ sudo docker exec -it wordpress_container_name /bin/bash
 ```bash
 chown -R www-data:www-data wp-content
 ```
+
+```bash
+crontab -e
+```
+
+> Add start on boot
+
+```bash
+@reboot (sleep 30s ; cd /home/ubuntu/cicd-dockerhub-wordpress ; /usr/local/bin/docker-compose up -d )&
+```
